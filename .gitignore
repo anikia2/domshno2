@@ -1,12 +1,11 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
+file_csv = open('C:/Python33/klas.csv','r',delimiter=",")
+reader = csv.reader(file_csv)
+reader.next()
+suma=0
+for row in reader:
+    suma=suma+row[4]
 
-# Compiled Dynamic libraries
-*.so
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+print "rezultata e"
+print suma
+file_csv.close
